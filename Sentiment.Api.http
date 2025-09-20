@@ -1,0 +1,6 @@
+@Sentiment.Api_HostAddress = http://localhost:5025
+
+GET {{Sentiment.Api_HostAddress}}/sentiment-api/
+Accept: application/json
+
+###
