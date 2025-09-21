@@ -6,8 +6,12 @@ namespace Sentiment.Api.Models;
 
 public partial class AppDbContext : DbContext
 {
-    public AppDbContext()
+    private readonly IConfiguration? _configuration;
+
+    // Constructor que recibe opciones DI
+    public AppDbContext(DbContextOptions<AppDbContext> options, IConfiguration configuration) : base(options)
     {
+        _configuration = configuration;
     }
 
     public AppDbContext(DbContextOptions<AppDbContext> options)
@@ -18,8 +22,23 @@ public partial class AppDbContext : DbContext
     public virtual DbSet<Comment> Comments { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=LAPTOP-BI0LJCAO;Database=sentiment_db;Trusted_Connection=True;TrustServerCertificate=True;");
+    {
+        // Crea la conexión sólo si aún no está configurado (i.e. no se pasó por AddDbContext)
+        if (!optionsBuilder.IsConfigured)
+        {
+            if (_configuration == null)
+            {
+                throw new InvalidOperationException("No configuration available to configure DbContext.");
+            }
+
+            var connStr = _configuration.GetConnectionString("DefaultConnection");
+            if (string.IsNullOrEmpty(connStr))
+            {
+                throw new InvalidOperationException("Connection string 'DefaultConnection' not found in configuration.");
+            }
+            optionsBuilder.UseSqlServer(connStr);
+        }
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

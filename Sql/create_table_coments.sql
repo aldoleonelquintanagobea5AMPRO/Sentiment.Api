@@ -12,8 +12,8 @@ BEGIN
 	CREATE TABLE Comments
 	(
 	    id INT IDENTITY(1,1) PRIMARY KEY,
-		product_id INT NOT NULL,
-		user_id INT NOT NULL,
+		product_id NVARCHAR(100) NOT NULL,
+		user_id NVARCHAR(100) NOT NULL,
 		comment_text NVARCHAR(MAX) NOT NULL,
 		sentiment NVARCHAR(20) NOT NULL,
 		created_at DATETIME2 NOT NULL DEFAULT (SYSUTCDATETIME())

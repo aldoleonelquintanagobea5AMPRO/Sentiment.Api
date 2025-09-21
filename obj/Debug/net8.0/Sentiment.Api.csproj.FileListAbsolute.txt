@@ -168,3 +168,5 @@ C:\Users\jñ\source\repos\Sentiment.Api\obj\Debug\net8.0\refint\Sentiment.Api.dl
 C:\Users\jñ\source\repos\Sentiment.Api\obj\Debug\net8.0\Sentiment.Api.pdb
 C:\Users\jñ\source\repos\Sentiment.Api\obj\Debug\net8.0\Sentiment.Api.genruntimeconfig.cache
 C:\Users\jñ\source\repos\Sentiment.Api\obj\Debug\net8.0\ref\Sentiment.Api.dll
+C:\Users\jñ\source\repos\Sentiment.Api\obj\Debug\net8.0\Sentiment.Api.sourcelink.json
+C:\Users\jñ\source\repos\Sentiment.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
