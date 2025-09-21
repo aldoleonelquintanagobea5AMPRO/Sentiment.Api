@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\services\\sentimentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:services\\sentimentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\sentiment.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:sentiment.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
@@ -13,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\services\\sentimentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:services\\sentimentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-09-21T20:29:57.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "create_table_coments.sql",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Sql\\create_table_coments.sql",
               "RelativeDocumentMoniker": "Sql\\create_table_coments.sql",
@@ -65,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -73,12 +90,11 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-20T20:50:18.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T20:50:18.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -90,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -98,25 +114,24 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T19:09:25.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T19:09:25.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Sentiment.Api.http",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Sentiment.Api.http",
               "RelativeDocumentMoniker": "Sentiment.Api.http",
               "ToolTip": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Sentiment.Api.http",
               "RelativeToolTip": "Sentiment.Api.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2025-09-20T18:22:32.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SentimentService.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Services\\SentimentService.cs",
               "RelativeDocumentMoniker": "Services\\SentimentService.cs",
@@ -129,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Models\\Comment.cs",
               "RelativeDocumentMoniker": "Models\\Comment.cs",
@@ -141,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
@@ -149,18 +164,17 @@
               "RelativeToolTip": "Models\\AppDbContext.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T18:11:01.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T18:11:01.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "CommentsController.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Controllers\\CommentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\CommentsController.cs",
               "ToolTip": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Controllers\\CommentsController.cs",
               "RelativeToolTip": "Controllers\\CommentsController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T23:59:31.633Z",
               "EditorCaption": ""

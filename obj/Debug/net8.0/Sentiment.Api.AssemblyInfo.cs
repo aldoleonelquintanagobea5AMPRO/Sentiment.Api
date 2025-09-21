@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sentiment.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56c63412d09a6af9cf11d3817c69d0ae4663b17c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4984970f1ac707128662c7b35e224c4797ff881")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sentiment.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sentiment.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
