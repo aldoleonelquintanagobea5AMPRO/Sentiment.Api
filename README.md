@@ -5,17 +5,17 @@ API RESTful en ASP.NET Core para análisis de sentimientos. Permite registrar co
 ---
 
 ## 📦 Contenido del repo
-Sentiment.Api/
-├─ Controllers/CommentsController.cs
-├─ Models/AppDbContext.cs
-├─ Models/Comment.cs
-├─ Services/SentimentService.cs
-├─ SQL/create_table_comments.sql
-├─ appsettings.json
-├─ Dockerfile
-├─ Program.cs
-├─ launchSettings.json
-└─ Sentiment.Api.http
+    Sentiment.Api/
+    ├─ Controllers/CommentsController.cs
+    ├─ Models/AppDbContext.cs
+    ├─ Models/Comment.cs
+    ├─ Services/SentimentService.cs
+    ├─ SQL/create_table_comments.sql
+    ├─ appsettings.json
+    ├─ Dockerfile
+    ├─ Program.cs
+    ├─ launchSettings.json
+    └─ Sentiment.Api.http
 
 ---
 
@@ -29,9 +29,8 @@ Sentiment.Api/
 ## 📦📦 Cómo clonar repositorio
 En terminal, ir a la carpeta donde se va a guardar el proyecto y ejecutar lo siguiente:
 
-git clone <TU_REPO_URL>
-
-cd sentiment-api
+    git clone <TU_REPO_URL>
+    cd sentiment-api
 
 ---
 
@@ -45,60 +44,45 @@ cd sentiment-api
    - En `IPAll`, establecer `TCP Port = 1433`.  
 6. Abrir puerto 1433 en Windows Firewall (Inbound Rule).  
 7. Crear la base y tabla con el script incluido:
-   ```powershell
-   sqlcmd -S localhost,1433 -U sa -P "YourStrong!Passw0rd" -i .\SQL\create_table_comments.sql
-   ⚠️ Puede cambiar usuario y contraseña por los que usted prefiera
+
+        sqlcmd -S localhost,1433 -U sa -P "YourStrong!Passw0rd" -i .\SQL\create_table_comments.sql
+
+⚠️ Puede cambiar usuario y contraseña por los que usted prefiera
 
 ---
 
 ## 📄 Script de creación de BD y tabla
 
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'sentiment_db')
+    IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'sentiment_db')
+    BEGIN
+        CREATE DATABASE sentiment_db;
+    END
+    GO
 
-BEGIN
+    USE sentiment_db;
+    GO
 
-	CREATE DATABASE sentiment_db;
- 
-END
-
-GO
-
-USE sentiment_db;
-
-GO
-
-IF OBJECT_ID(N'dbo.Comments', N'U') IS NULL
-
-BEGIN
-
-	CREATE TABLE Comments
- 
-	(
- 
-	  id INT IDENTITY(1,1) PRIMARY KEY,
-   
-		product_id NVARCHAR(100) NOT NULL,
-  
-		user_id NVARCHAR(100) NOT NULL,
-  
-		comment_text NVARCHAR(MAX) NOT NULL,
-  
-		sentiment NVARCHAR(20) NOT NULL,
-  
-		created_at DATETIME2 NOT NULL DEFAULT (SYSUTCDATETIME())
-  
-	);
- 
-END
-
-GO
+    IF OBJECT_ID(N'dbo.Comments', N'U') IS NULL
+    BEGIN
+    	CREATE TABLE Comments
+    	(
+    	    id INT IDENTITY(1,1) PRIMARY KEY,
+    		product_id NVARCHAR(100) NOT NULL,
+		    user_id NVARCHAR(100) NOT NULL,
+		    comment_text NVARCHAR(MAX) NOT NULL,
+		    sentiment NVARCHAR(20) NOT NULL,
+		    created_at DATETIME2 NOT NULL DEFAULT (SYSUTCDATETIME())
+	    );
+    END
+    GO
 
 ## 🔗 Cadena de conexión
 Ejemplo (para contenedor Linux conectando a SQL Server en Windows):
 
-Server=X.X.X.X,1433;Database=sentiment_db;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;
+    Server=X.X.X.X,1433;Database=sentiment_db;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;
 
 ⚠️ Cambiar X.X.X.X por la IP asignada en tu red local (Wi-fi o Ethernet).
+
 ⚠️ Se recomienda usar variables de entorno (Dockerfile) en lugar de editar appsettings.json.
 
 ---
@@ -120,46 +104,46 @@ Server=X.X.X.X,1433;Database=sentiment_db;User Id=sa;Password=YourStrong!Passw0r
 
 Construir imagen:
 
-docker build -t sentimentapi:dev .
+    docker build -t sentimentapi:dev .
 
 Ejecutar contenedor:
 
-docker run --rm -e "ConnectionStrings__DefaultConnection=Server=X.X.X.X,1433;Database=sentiment_db;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;" -p 5025:80 sentimentapi:dev
+    docker run --rm -e "ConnectionStrings__DefaultConnection=Server=X.X.X.X,1433;Database=sentiment_db;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;" -p 5025:80 sentimentapi:dev
 
 Abrir en navegador:
 
-http://localhost:5025/swagger
+    http://localhost:5025/swagger
 
 ---
 
 ## 🐳 Alternativa: achivo 'docker-compose.yml'
 Si prefieres levantar SQL Server en un contenedor junto con la API:
 
-version: '3.8'
-services:
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    environment:
-      - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
-    ports:
-      - "1433:1433"
+    version: '3.8'
+    services:
+      sqlserver:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        environment:
+          - ACCEPT_EULA=Y
+          - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
+        ports:
+          - "1433:1433"
+        volumes:
+          - mssql_data:/var/opt/mssql
+
+      api:
+        build:
+          context: .
+          dockerfile: Sentiment.Api/Dockerfile
+        depends_on:
+          - sqlserver
+        environment:
+          - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=sentiment_db;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;
+        ports:
+          - "5025:80"
+
     volumes:
-      - mssql_data:/var/opt/mssql
-
-  api:
-    build:
-      context: .
-      dockerfile: Sentiment.Api/Dockerfile
-    depends_on:
-      - sqlserver
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=sentiment_db;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;
-    ports:
-      - "5025:80"
-
-volumes:
-  mssql_data:
+      mssql_data:
 
 
 Levantar con: docker compose up --build
@@ -173,12 +157,8 @@ Levantar con: docker compose up --build
 
 Ejemplo POST /api/comments:
 
-{
-
-  "product_id": "PROD001",
-  
-  "user_id": "USER001",
-  
-  "comment_text": "Este producto es excelente, superó mis expectativas."
-  
-}
+    {
+      "product_id": "PROD001",
+      "user_id": "USER001",
+      "comment_text": "Este producto es excelente, superó mis expectativas."
+    }
