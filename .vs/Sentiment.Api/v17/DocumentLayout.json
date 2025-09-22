@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\sentiment.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:sentiment.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\sql\\create_table_coments.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
@@ -31,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|c:\\users\\j\u00F1\\source\\repos\\sentiment.api\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{773E2CC6-F6E1-41BA-832F-88C4F35C9042}|Sentiment.Api.csproj|solutionrelative:models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "create_table_coments.sql ",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Sql\\create_table_coments.sql",
               "RelativeDocumentMoniker": "Sql\\create_table_coments.sql",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -78,11 +78,12 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-20T20:50:18.235Z"
+              "WhenOpened": "2025-09-20T20:50:18.235Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -90,17 +91,18 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-20T20:45:07.082Z"
+              "WhenOpened": "2025-09-20T20:45:07.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-20T19:09:25.847Z",
               "EditorCaption": ""
@@ -120,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SentimentService.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Services\\SentimentService.cs",
               "RelativeDocumentMoniker": "Services\\SentimentService.cs",
@@ -128,7 +130,8 @@
               "RelativeToolTip": "Services\\SentimentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T18:14:20.468Z"
+              "WhenOpened": "2025-09-20T18:14:20.468Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -140,11 +143,12 @@
               "RelativeToolTip": "Models\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T18:11:14.585Z"
+              "WhenOpened": "2025-09-20T18:11:14.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
@@ -152,11 +156,12 @@
               "RelativeToolTip": "Models\\AppDbContext.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T18:11:01.974Z"
+              "WhenOpened": "2025-09-20T18:11:01.974Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CommentsController.cs",
               "DocumentMoniker": "C:\\Users\\j\u00F1\\source\\repos\\Sentiment.Api\\Controllers\\CommentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\CommentsController.cs",
@@ -164,7 +169,8 @@
               "RelativeToolTip": "Controllers\\CommentsController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T23:59:31.633Z"
+              "WhenOpened": "2025-09-19T23:59:31.633Z",
+              "EditorCaption": ""
             }
           ]
         }
