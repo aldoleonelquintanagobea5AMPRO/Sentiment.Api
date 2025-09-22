@@ -30,6 +30,7 @@ Sentiment.Api/
 En terminal, ir a la carpeta donde se va a guardar el proyecto y ejecutar lo siguiente:
 
 git clone <TU_REPO_URL>
+
 cd sentiment-api
 
 ---
@@ -53,26 +54,43 @@ cd sentiment-api
 ## 📄 Script de creación de BD y tabla
 
 IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'sentiment_db')
+
 BEGIN
+
 	CREATE DATABASE sentiment_db;
+ 
 END
+
 GO
 
 USE sentiment_db;
+
 GO
 
 IF OBJECT_ID(N'dbo.Comments', N'U') IS NULL
+
 BEGIN
+
 	CREATE TABLE Comments
+ 
 	(
+ 
 	  id INT IDENTITY(1,1) PRIMARY KEY,
+   
 		product_id NVARCHAR(100) NOT NULL,
+  
 		user_id NVARCHAR(100) NOT NULL,
+  
 		comment_text NVARCHAR(MAX) NOT NULL,
+  
 		sentiment NVARCHAR(20) NOT NULL,
+  
 		created_at DATETIME2 NOT NULL DEFAULT (SYSUTCDATETIME())
+  
 	);
+ 
 END
+
 GO
 
 ## 🔗 Cadena de conexión
@@ -156,7 +174,11 @@ Levantar con: docker compose up --build
 Ejemplo POST /api/comments:
 
 {
+
   "product_id": "PROD001",
+  
   "user_id": "USER001",
+  
   "comment_text": "Este producto es excelente, superó mis expectativas."
+  
 }
